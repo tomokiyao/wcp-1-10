@@ -1,12 +1,11 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #6c6b6b;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #6c6b6b;
 }
 .header {
 	width: 100%;
-	height: 70px;
 	background-color: #EC715F;
 }
 .clearfix::after {
@@ -32,8 +31,9 @@
 	color: #FAFAFA;
 	list-style: none;
 	display: inline-block;
-	margin: 27px 30px;
+	margin: 0 30px;
 	float: right;
+	line-height: 70px;
 }
 .main-visual {
 	background-image: url(img/mv.png);
@@ -168,6 +168,7 @@
 	height: auto;
 	float: left;
 	padding-bottom: 90px;
+
 }
 .fa-large {
 	font-size: 60px;
@@ -181,6 +182,7 @@
 .feature-text1 {
 	font-size: 16px;
 	color: #000000;
+	text-align: left;
 }
 .feature-strength2 {
 	width: 320px;
@@ -277,8 +279,11 @@
 	width: 400px;
 	float: left;
 	padding-bottom: 90px;
+}
+.information-content {
+	width: 130px;
+	margin: 0 auto;
 	text-align: left;
-	padding-left: 200px;
 }
 .mail {
 	font-size: 20px;
@@ -296,36 +301,41 @@ a {
 .social {
 	width: 400px;
 	float: left;
-	text-align: left;
+	text-align: center;
 	margin: 0 auto;
-	padding-left: 80px;
+
+}
+.social-content {
+	width: 180px;
+	margin: 0 auto;
+	text-align: left;
 }
 .sns {
 	font-size: 20px;
 	color: #000000;
-	padding-bottom: 5px;
+
 }
 .social i {
 	font-size: 50px;
 	color: #000000;
-	padding-right: 20px;
 }
-.footer {
+.fa-twitter{
+	padding: 0 20px;
+}
+footer{
 	width: 100%;
-	height:60px;
 	background-color: #EC715F;
 	text-align: center;
-	padding-top: 22px
+	line-height: 60px;
 }
+
 .footer-text {
 	font-size: 16px;
 	color: #FAFAFA;
 }
 
 @media screen and (max-width:425px) {
-body {
-	padding: 0 5%;
-}
+
 br {
 	display: none;
 }
@@ -333,6 +343,7 @@ br {
 	width: 100%;
 	height: 50px;
 }
+
 .headline {
 	width: 100%;
 	height: 50px;
@@ -387,6 +398,9 @@ br {
 .portfolio-content {
 	width: 100%;
 }
+.portfolio-text2 {
+	padding: 30px 5%;
+}
 .portfolio-image {
 	width: 100%;
 	height: 860px;
@@ -415,26 +429,39 @@ br {
 .feature {
 	width: 100%;
 }
+.feature-text {
+	padding: 30px 5%;
+}
 .feature-strength {
 	width: 100%;
 }
 .feature-strength1 {
 	float: none;
 	margin: 0 auto;
+	width: 90%;
 	padding-bottom: 10px;
 }
 .feature-strength2 {
 	float: none;
 	margin: 0 auto;
+	width: 90%;
 	padding-bottom: 10px;
 }
 .feature-strength3 {
 	float: none;
 	margin: 0 auto;
+	width: 90%;
 }
 .profile {
 	width: 100%;
 	height: auto;
+}
+.profile-text2 {
+	padding: 30px 5%;
+}
+.profile-text4 {
+	padding: 0 5%;
+	padding-bottom: 20px;
 }
 .profile-content {
 	width: 100%;
@@ -448,25 +475,37 @@ br {
 	text-align: center;
 	padding-left: none;
 	margin: 0 auto;
+	margin-bottom: 90px;
 }
 .profile-text6 {
-	margin-bottom: 90px;
+	width: 90%;
+	margin: 0 auto;
+	word-wrap: break-word;
 }
 .contact {
 	width: 100%;
 }
+.contact-text {
+	padding: 30px 5%;
+}
 .information {
 	width: 100%;
 	float: none;
-	text-align: center;
-	padding-left: 0;
 	padding-bottom: 20px;
+}
+.information-content {
+	text-align: center;
 }
 .social {
 	width: 100%;
-	text-align: center;
-	padding-left: 0;
+	padding-bottom: 90px;
 }
-.social i {
-	padding: 0 4px;
+.social-content {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+.fa-twitter{
+	padding: 0px 8px;
+}
 }
